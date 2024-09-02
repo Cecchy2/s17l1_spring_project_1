@@ -17,8 +17,6 @@ public class Topping {
     public String toString() {
         return
                 nome +
-                " - price=" + price + "Eur"+
-                " - valoriNutrizionali " + valoriNutrizionali + " cal "
-                ;
+                " - price=" + price + "Eur";
     }
 }

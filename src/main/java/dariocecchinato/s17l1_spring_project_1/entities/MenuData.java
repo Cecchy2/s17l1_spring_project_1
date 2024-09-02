@@ -16,8 +16,8 @@ public abstract class MenuData {
     @Override
     public String toString() {
         return
-                "nome= " + nome +
-                "- prezzo=" + prezzo +
-                "- valoriNutrizionali='" + valoriNutrizionali + '\'';
+                " nome " + nome +
+                " prezzo " + prezzo +
+                " valoriNutrizionali " + valoriNutrizionali;
     }
 }

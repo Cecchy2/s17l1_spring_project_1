@@ -8,6 +8,6 @@ public class Bevande extends MenuData {
 
     @Override
     public String toString() {
-        return getNome()+ " "+ getPrezzo() + " " + getValoriNutrizionali();
+        return "Drink " + getNome()+ " prezzo "+ getPrezzo() + "  " + getValoriNutrizionali()+ " Cal";
     }
 }
