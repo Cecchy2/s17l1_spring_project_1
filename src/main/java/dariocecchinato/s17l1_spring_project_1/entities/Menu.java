@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    private List<MenuData> datas;
+    private final List<MenuData> datas;
 
     public Menu() {
         this.datas = new ArrayList<>();
@@ -16,7 +16,6 @@ public class Menu {
 
     @Override
     public String toString() {
-        return " Menu " + datas;
+        return "Menu" + datas;
     }
-
 }

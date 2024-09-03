@@ -1,22 +1,20 @@
 package dariocecchinato.s17l1_spring_project_1.entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@AllArgsConstructor
-public class Topping {
-    private String nome;
-    private double price;
-    private int valoriNutrizionali;
+public class Topping extends MenuData {
+
+
+    public Topping(String nome, double prezzo, int valoriNutrizionali) {
+        super(nome, prezzo, valoriNutrizionali);
+    }
 
     @Override
     public String toString() {
-        return
-                nome +
-                " - price=" + price + "Eur";
+        return "• Topping: " + getNome() + " prezzo" + getPrezzo() + " valori Nutrizionali " + getValoriNutrizionali();
     }
 }
+

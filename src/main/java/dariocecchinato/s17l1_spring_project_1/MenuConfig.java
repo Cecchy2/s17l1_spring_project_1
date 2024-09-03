@@ -1,6 +1,6 @@
 package dariocecchinato.s17l1_spring_project_1;
 
-import dariocecchinato.s17l1_spring_project_1.entities.Bevande;
+import dariocecchinato.s17l1_spring_project_1.entities.Bevanda;
 import dariocecchinato.s17l1_spring_project_1.entities.Menu;
 import dariocecchinato.s17l1_spring_project_1.entities.Pizza;
 import dariocecchinato.s17l1_spring_project_1.entities.Topping;
@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MenuConfig {
-
 
     @Bean
     public Topping tomato() {
@@ -35,8 +34,6 @@ public class MenuConfig {
     public Topping salami(){
         return new Topping("salami",0.99, 86);
     }
-
-
     @Bean
     public Pizza margherita(){
         Pizza margherita = new Pizza("Margherita", 4.99, 1104);
@@ -44,7 +41,6 @@ public class MenuConfig {
         margherita.addTopping(cheese());
         return margherita;
     }
-
     @Bean
     public Pizza hawaianPizza(){
         Pizza hawaianPizza = new Pizza("Hawaian Pizza", 6.49, 1024);
@@ -62,21 +58,17 @@ public class MenuConfig {
         salamiPizza.addTopping(salami());
         return salamiPizza;
     }
-
     @Bean
-    public Bevande lemonade(){
-        Bevande lemonade = new Bevande("Lemonade", 1.29, 128);
-        return lemonade;
+    public Bevanda lemonade(){
+        return new Bevanda("Lemonade", 1.29, 128);
     }
     @Bean
-    public Bevande water(){
-        Bevande water = new Bevande("Water", 1.29, 0);
-        return water;
+    public Bevanda water(){
+        return new Bevanda("Water", 1.29, 0);
     }
     @Bean
-    public Bevande wine(){
-        Bevande wine = new Bevande("Wine", 7.49, 607);
-        return wine;
+    public Bevanda wine(){
+        return new Bevanda("Wine", 7.49, 607);
     }
     @Bean
     public Menu menu(){

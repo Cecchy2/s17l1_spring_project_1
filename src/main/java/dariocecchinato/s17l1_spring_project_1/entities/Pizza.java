@@ -23,8 +23,8 @@ private List<Topping> toppings;
 
     @Override
     public String toString() {
-        return "• Pizza " + getNome() +
-                " : Toppings: " + toppings +
+        return "• Pizza: " + getNome() +
+                 toppings +
                 " , Prezzo " + getPrezzo() +
                 " , Valori Nutrizionali "+ getValoriNutrizionali();
     }
